@@ -1,0 +1,11 @@
+applications:
+- name: 02-todo-rest-api-h2
+  disk_quota: 1G
+  instances: 1
+  memory: 1G
+  path: target/02-todo-rest-api-h2-0.0.1-SNAPSHOT.war
+  routes:
+  - route: 02-todo-rest-api-h2-deep-101.cfapps.io
+  buildpacks:
+  - https://github.com/cloudfoundry/java-buildpack.git
+  stack: cflinuxfs3

@@ -9,7 +9,9 @@
 	<packaging>war</packaging>
 
 	<description>Demo project for Spring Boot</description>
-
+    <build>
+        <finalName>h2-example</finalName>
+    </build>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>

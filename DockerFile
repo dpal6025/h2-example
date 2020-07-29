@@ -1,4 +1,4 @@
 FROM openjdk:8
-EXPOSE 8080
+EXPOSE 8099
 ADD target/h2-example.jar h2-example.jar
 ENTRYPOINT ["java", "-jar", "/h2-example.jar"]
